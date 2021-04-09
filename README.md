@@ -27,5 +27,4 @@ Once the game is opened it first shows the board, game instructions and a demo h
 
 ## SWOT Analysis
 
-
-(https://img.shields.io/github/issues/256274/StepIn_Miniproject.git)
+[![GitHub issues](https://img.shields.io/github/issues/256274/StepIn_Miniproject.git)](https://github.com/256274/StepIn_Miniproject.git/issues)
