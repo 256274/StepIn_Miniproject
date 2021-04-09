@@ -1,3 +1,3 @@
 # StepIn_Miniproject
 ## Introduction
-![tic tac toe](https://github.com/256274/tic-tac-toe_images/issues/1#issue-854347996) 
+![tic tac toe](http://www.thepopularapps.com/application/upload/Apps/2017/05/tic-tac-toe-game-free-29.png) 
