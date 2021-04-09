@@ -15,9 +15,6 @@ Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool
    
 If played optimally by both players, the game always ends in a draw, making tic-tac-toe a futile game.
    
-## Research
-
-
 ## Cost and Features
 The cost of the game depends on the requirements of players. It can be modelled as a 3D game which requires heavy software tools, we can add music, we can make it an online game which requires database, or it can as simple as entering from keypad of a old model mobile phone. 
 
