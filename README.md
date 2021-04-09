@@ -24,5 +24,11 @@ The cost of the game depends on the requirements of players. It can be modelled 
 As we are planning to design a simple game with a very basic user interface (UI), the cost required is zero if a computer available.
 
 ## Defining Our System
+The game can be generalized to an m,n,k-game in which two players alternate placing stones of their own color on an m×n board, with the goal of getting k of their own color in a row.
+
+Once the game is opened it first shows the board, game instructions and a demo how to play.
+
+## SWOT Analysis
+
 
 
