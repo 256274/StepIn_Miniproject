@@ -30,6 +30,9 @@ Once the game is opened it first shows the board, game instructions and a demo h
 ## Detail requirements
 ### High Level Requirements:
 
+ID      | Description     | Status
+--------|-----------------|-------
+1       |                 | 
 
 ### Low level Requirements:
 
