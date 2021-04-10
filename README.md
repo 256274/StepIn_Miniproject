@@ -17,5 +17,8 @@ If played optimally by both players, the game always ends in a draw, making tic-
 
 ## Overview
 
-![Capture1](https://user-images.githubusercontent.com/80679363/114270770-cb4ca080-9a2b-11eb-89b9-51292b8e367a.PNG)      ![Capture2](https://user-images.githubusercontent.com/80679363/114270798-f2a36d80-9a2b-11eb-9fc2-67e618f754e6.PNG)
+![Capture1](https://user-images.githubusercontent.com/80679363/114270770-cb4ca080-9a2b-11eb-89b9-51292b8e367a.PNG)
+
+![Capture2](https://user-images.githubusercontent.com/80679363/114270798-f2a36d80-9a2b-11eb-9fc2-67e618f754e6.PNG)   ![Capture3](https://user-images.githubusercontent.com/80679363/114270826-1961a400-9a2c-11eb-82c4-0b308b97b8f3.PNG)      ![Capture4](https://user-images.githubusercontent.com/80679363/114270832-21b9df00-9a2c-11eb-8d6b-fe534cf35481.PNG)
+
 
