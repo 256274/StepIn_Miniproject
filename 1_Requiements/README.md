@@ -1,5 +1,5 @@
 # Requirements
-## Introduction
+
 Operating system (any)
 
 GCC compiler
