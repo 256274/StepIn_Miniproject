@@ -22,9 +22,10 @@ The game can be generalized to an m,n,k-game in which two players alternate plac
 
 Once the game is opened it first shows the board, game instructions and a demo how to play.
 
-## SWOT Analysis
+## Flow chart
 
-![Capture5](https://user-images.githubusercontent.com/80679363/114271936-8592d680-9a31-11eb-85ac-fd48d4c49d3b.PNG)
+![Capture5](https://user-images.githubusercontent.com/80679363/114272398-a3f9d180-9a33-11eb-8890-a06213116f3d.PNG)
+
 
 
 ## Detail requirements
