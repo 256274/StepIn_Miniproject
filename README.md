@@ -14,3 +14,8 @@ In 1975, tic-tac-toe was also used by MIT students to demonstrate the computatio
 Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence that deals with the searching of game trees.
    
 If played optimally by both players, the game always ends in a draw, making tic-tac-toe a futile game.
+
+## Overview
+
+![Capture1](https://user-images.githubusercontent.com/80679363/114270770-cb4ca080-9a2b-11eb-89b9-51292b8e367a.PNG)      ![Capture2](https://user-images.githubusercontent.com/80679363/114270798-f2a36d80-9a2b-11eb-9fc2-67e618f754e6.PNG)
+
