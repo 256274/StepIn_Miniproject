@@ -1,3 +1,4 @@
+#include "tic_tac_toe.h"
 
 void Display_TicTacToe_Board(char *board){
     printf("     |     |     \n");
