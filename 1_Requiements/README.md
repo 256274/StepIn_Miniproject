@@ -1,5 +1,5 @@
 # Requirements
-## Introduction
+
 Operating system (any)
 
 GCC compiler
@@ -22,12 +22,18 @@ The game can be generalized to an m,n,k-game in which two players alternate plac
 
 Once the game is opened it first shows the board, game instructions and a demo how to play.
 
-## SWOT Analysis
+## Flow chart
+
+![Capture5](https://user-images.githubusercontent.com/80679363/114272398-a3f9d180-9a33-11eb-8890-a06213116f3d.PNG)
+
 
 
 ## Detail requirements
 ### High Level Requirements:
 
+ID      | Description     | Status
+--------|-----------------|-------
+1       |                 | 
 
 ### Low level Requirements:
 
