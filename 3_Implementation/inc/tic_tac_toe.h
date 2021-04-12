@@ -1,6 +1,8 @@
 
 #include<stdbool.h>
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 #define SIDE 3
 #define CPU 1
