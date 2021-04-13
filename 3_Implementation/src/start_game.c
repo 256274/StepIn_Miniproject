@@ -4,7 +4,7 @@
 void Start_Game(int Turn){
     char board[SIDE][SIDE];
     int moves[SIDE*SIDE];
-    //Initialize_Game((char *)board, moves);
+    Initialize_Game((char *)board, moves);
     Game_instructions();
      
     int Index = 0, x, y;

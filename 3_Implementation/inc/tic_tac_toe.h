@@ -40,7 +40,7 @@ void Game_instructions();
  * @brief initializes the game. It reads a 2D array to know the cell adress of the board
  * @param SIZE.
  */
-void Initialize_Game(char *board, int moves[]); 
+void Initialize_Game(char *board, int moves[]);
 
 /**
  * @brief Displays the winner name
