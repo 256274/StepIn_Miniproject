@@ -4,13 +4,9 @@
 
 PROJECT_NAME = project.exe
 SRC = tic_tac_toe.c\
-src\column_check.c\
-src\diagonal_check.c\
 src\display_board.c\
 src\game_instruction.c\
 src\initialize.c\
-src\game_over.c\
-src\row_check.c\
 src\start_game.c\
 src\winner.c
 

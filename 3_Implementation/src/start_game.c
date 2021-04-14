@@ -4,35 +4,60 @@
 void Start_Game(int Turn){
     char board[SIDE][SIDE];
     int moves[SIDE*SIDE];
-    Initialize_Game((char *)board, moves);
-    Game_instructions();
+
+    void (*fptr)();         // Function pointer
+    Initialize_Game(board, moves);
+    fptr = Game_instructions;
+    fptr();
      
-    int Index = 0, x, y;
-    do {
+    int Index = 0, r_index, c_index, row=0, column=0, diagonal=0;
+
+
+    while ((row!=1 && column!=1 && diagonal!=1) &&  Index != SIDE*SIDE){
         if (Turn == CPU)
         {
-            x = moves[Index] / SIDE;
-            y = moves[Index] % SIDE;
-            board[x][y] = CPUMOVE;
+            r_index = moves[Index] / SIDE;
+            c_index = moves[Index] % SIDE;
+            board[r_index][c_index] = CPUMOVE;
             printf("COMPUTER has put a %c in cell %d\n", CPUMOVE, moves[Index]+1);
-            Display_TicTacToe_Board((char *)board);
+            Display_TicTacToe_Board(board);
             Index ++;
             Turn = PLAYER;
         }
          
         else if (Turn == PLAYER)
         {
-            x = moves[Index] / SIDE;
-            y = moves[Index] % SIDE;
-            board[x][y] = PLAYERMOVE;
-            printf ("HUMAN has put a %c in cell %d\n", PLAYERMOVE, moves[Index]+1);
-            Display_TicTacToe_Board((char *)board);
+            r_index = moves[Index] / SIDE;
+            c_index = moves[Index] % SIDE;
+            board[r_index][c_index] = PLAYERMOVE;
+            printf ("User has put a %c in cell %d\n", PLAYERMOVE, moves[Index]+1);
+            Display_TicTacToe_Board(board);
             Index ++;
             Turn = CPU;
         }
-    }while (game_Over((char *)board) == false &&  Index != SIDE*SIDE);
+        // check rows
+         for (int i=0; i<SIDE; i++)
+    {
+        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
+            row = 1;
+    }
+    // check columns
 
-    if (game_Over((char *)board) == false && Index == SIDE * SIDE)
+    for (int i=0; i<SIDE; i++)
+    {
+        if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != ' ')
+            column=1;
+    }
+
+    //check diagonals
+    if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[2][1] != ' ')
+     diagonal=1;
+
+    if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ')
+     diagonal=1;;
+    }
+
+    if ((row!=1 && column!=1 && diagonal!=1) && Index == SIDE * SIDE)
         printf("Match Drawn\n");
     else
     {
