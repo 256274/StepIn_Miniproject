@@ -6,9 +6,9 @@ PROJECT_NAME = project.exe
 SRC = tic_tac_toe.c\
 src\display_board.c\
 src\game_instruction.c\
-src\initialize.c\
-src\start_game.c\
-src\winner.c
+src\initialize_Board.c\
+src\start_playing.c\
+src\expose_winner.c
 
 INC = inc
 

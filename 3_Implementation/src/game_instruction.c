@@ -1,8 +1,8 @@
 #include "tic_tac_toe.h"
 
 void Game_instructions(){
-    printf("||============Tic Tac Toe Game==========||\n");
-	printf("---Choose A Cell For Your Chance-------\n\n");
+    printf("||============ Tic Tac Toe ==========||\n");
+	printf("---Choose A Cell For Your Chance---\n\n");
     
     printf(" _____ _____ _____\n");
     printf("|     |     |     |\n");
@@ -19,4 +19,6 @@ void Game_instructions(){
     printf("|  7  |  8  |  9  |\n");
 
     printf("|_____|_____|_____|\n\n");
+
+    printf("---You win when you match any row, column, or any diagonal---\n\n");
 }
