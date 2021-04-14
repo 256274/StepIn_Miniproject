@@ -30,7 +30,7 @@ If played optimally by both players, the game always ends in a draw, making tic-
 2. Logic behind initializing the Game.
 #### Written code:
 1. Instead of using array as passing value, I have used pointer to a 2D array to pass while calling a funtion.
-2. The representation of the Board has been made differently.
+2. The representation of the Board has been displayed differently (more neatly).
 3. Code to check if the game is over or not and declare the winner (took help from reference).
 4. Used multi file approach.
 5. Randomizing the cell numbers or indices of the board.
