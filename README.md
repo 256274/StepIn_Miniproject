@@ -21,4 +21,14 @@ If played optimally by both players, the game always ends in a draw, making tic-
 
 ![Capture](https://user-images.githubusercontent.com/80679363/114700801-96985c00-9d3f-11eb-8d18-bc2ae1504260.PNG)
 
+## Reference 
 
+    C programming tutorial by Super Coders
+
+#### Retrieved: 
+1. The flow of the code.
+2. Logic behind initializing the Game.
+#### Written code:
+1. Instead of using array as passing value, I have used pointer to a 2D array to pass while calling a funtion.
+2. The representation of the Board has been made differently.
+3. 
