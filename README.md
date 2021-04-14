@@ -16,11 +16,9 @@ Because of the simplicity of tic-tac-toe, it is often used as a pedagogical tool
 If played optimally by both players, the game always ends in a draw, making tic-tac-toe a futile game.
 
 ## Overview
+![Captureb](https://user-images.githubusercontent.com/80679363/114700789-913b1180-9d3f-11eb-9557-342ebf2f3212.PNG)
 
-![Capture1](https://user-images.githubusercontent.com/80679363/114270770-cb4ca080-9a2b-11eb-89b9-51292b8e367a.PNG)
 
-![Capture2](https://user-images.githubusercontent.com/80679363/114270798-f2a36d80-9a2b-11eb-9fc2-67e618f754e6.PNG)   ![Capture3](https://user-images.githubusercontent.com/80679363/114270826-1961a400-9a2c-11eb-82c4-0b308b97b8f3.PNG)
-
-![Capture4](https://user-images.githubusercontent.com/80679363/114270832-21b9df00-9a2c-11eb-8d6b-fe534cf35481.PNG)
+![Capture](https://user-images.githubusercontent.com/80679363/114700801-96985c00-9d3f-11eb-8d18-bc2ae1504260.PNG)
 
 
