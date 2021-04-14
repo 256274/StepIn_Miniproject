@@ -1,12 +1,12 @@
 
 #include "tic_tac_toe.h"
 
-void Start_Game(int Turn){
+void Play_Game(int Turn){
     char board[SIDE][SIDE];
     int moves[SIDE*SIDE];
 
     void (*fptr)();         // Function pointer
-    Initialize_Game(board, moves);
+    initialize_Game(board, moves);
     fptr = Game_instructions;
     fptr();
      
@@ -19,7 +19,7 @@ void Start_Game(int Turn){
             r_index = moves[Index] / SIDE;
             c_index = moves[Index] % SIDE;
             board[r_index][c_index] = CPUMOVE;
-            printf("COMPUTER has put a %c in cell %d\n", CPUMOVE, moves[Index]+1);
+            printf("COMPUTER chose put a %c in cell %d\n", CPUMOVE, moves[Index]+1);
             Display_TicTacToe_Board(board);
             Index ++;
             Turn = PLAYER;
@@ -30,7 +30,7 @@ void Start_Game(int Turn){
             r_index = moves[Index] / SIDE;
             c_index = moves[Index] % SIDE;
             board[r_index][c_index] = PLAYERMOVE;
-            printf ("User has put a %c in cell %d\n", PLAYERMOVE, moves[Index]+1);
+            printf ("User chose put a %c in cell %d\n", PLAYERMOVE, moves[Index]+1);
             Display_TicTacToe_Board(board);
             Index ++;
             Turn = CPU;
@@ -58,7 +58,7 @@ void Start_Game(int Turn){
     }
 
     if ((row!=1 && column!=1 && diagonal!=1) && Index == SIDE * SIDE)
-        printf("Match Drawn\n");
+        printf("Match Drawn\n\n");
     else
     {
         if (Turn == CPU)

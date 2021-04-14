@@ -1,6 +1,6 @@
 #include "tic_tac_toe.h"
 
-void Initialize_Game(char (*board)[SIDE], int moves[]){
+void initialize_Game(char (*board)[SIDE], int moves[]){
     srand(time(NULL));
 
     int k, temp;
@@ -14,7 +14,7 @@ void Initialize_Game(char (*board)[SIDE], int moves[]){
         moves[i] = i;
 
     for(int i=0; i<SIDE*SIDE; i++){
-        k=(rand()%9)+1;
+        k=(rand()%8)+1;
 
         temp=moves[i];
         moves[i]=moves[k];

@@ -13,7 +13,7 @@ src\winner.c
 INC = inc
 
 $(PROJECT_NAME): $(SRC)
-	gcc $(SRC) -I $(INC) -o project.exe
+	gcc $(SRC) -I $(INC) -o $(PROJECT_NAME)
 
 run: $(PROJECT_NAME)
 	$(PROJECT_NAME)

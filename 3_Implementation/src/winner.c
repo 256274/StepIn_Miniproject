@@ -2,8 +2,8 @@
 
 void Declare_Winner(int Turn){
     if (Turn == CPU)
-        printf("COMPUTER has won\n");
+        printf("COMPUTER won the Match\n\n");
     else
-        printf("User has won\n");
+        printf("User won the Match!!!!\n\n");
     return;
 }

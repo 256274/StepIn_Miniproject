@@ -40,7 +40,7 @@ void Game_instructions();
  * @brief initializes the game. It reads a 2D array to know the cell address of the board
  * @param SIZE.
  */
-void Initialize_Game(char (*board)[SIDE], int moves[]);
+void initialize_Game(char (*board)[SIDE], int moves[]);
 
 /**
  * @brief Displays the winner name
@@ -48,24 +48,13 @@ void Initialize_Game(char (*board)[SIDE], int moves[]);
  */
 void Declare_Winner(int Turn); 
 
-/**
- * @brief Checks if any row or column or diagonal is crossed
- * @param here board is a 2D array with size 3x3 
- */
-bool row_Crossed(char (*board)[SIDE]); // Returns a boolean value, crossed or not
-
-bool column_Crossed(char (*board)[SIDE]); // Returns a boolean value, crossed or not
-
-bool diagonal_Crossed(char (*board)[SIDE]); // Returns a boolean value, crossed or not
-
-bool game_Over(char (*board)[SIDE]); // displays if game over, Returns a boolean value
 
 /**
  * @brief Starts the game
  * 
  * @param CPU 
  */
-void Start_Game(int Turn);
+void Play_Game(int Turn);
 
 
 #endif
