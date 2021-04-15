@@ -10,6 +10,7 @@ BUILD_DIR = Build
 SRC = ttt.c\
 src\display_board.c\
 src\gameover.c\
+src\delay.c\
 src\game_instruction.c\
 src\initialize_Board.c\
 src\start_playing.c\

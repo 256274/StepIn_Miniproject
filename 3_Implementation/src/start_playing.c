@@ -1,15 +1,6 @@
 
 #include "tic_tac_toe.h"
 
-void delay(long long int j)
-{
-    int i,k;
-    for(i=0;i<j;i++)
-    {
-        k=i;
-    }
-}
-
 void Play_Game(int Turn){
     void (*fptr)();         // Function pointer
     char board[SIDE][SIDE];
