@@ -1,6 +1,15 @@
 
 #include "tic_tac_toe.h"
 
+void delay(long long int j)
+{
+    int i,k;
+    for(i=0;i<j;i++)
+    {
+        k=i;
+    }
+}
+
 void Play_Game(int Turn){
     void (*fptr)();         // Function pointer
     char board[SIDE][SIDE];
@@ -33,6 +42,7 @@ void Play_Game(int Turn){
             Index ++;
             Turn = CPU;
         }
+    delay(1000000000);
 
     // check rows
     for (int i=0; i<SIDE; i++){

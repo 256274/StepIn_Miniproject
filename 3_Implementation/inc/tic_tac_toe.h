@@ -24,6 +24,7 @@
 #ifndef  __TTT_H__
 #define  __TTT_H__
 
+void delay(long long int j);
 /**
  * @brief funtion to show the board
  * 
