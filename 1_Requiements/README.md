@@ -47,7 +47,7 @@ To win, a player must place three of their marks in a horizontal, vertical, or d
 
 ID      | Description        | Status
 --------|--------------------|----------
-1       | Board to play game | avilable
+1       | Board to play game | available
 
 ### Low level Requirements:
 ID      | Description        
