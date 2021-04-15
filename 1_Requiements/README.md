@@ -26,6 +26,11 @@ Once the game is opened it first shows the board, game instructions and a demo h
 
 ![Capture5](https://user-images.githubusercontent.com/80679363/114272398-a3f9d180-9a33-11eb-8890-a06213116f3d.PNG)
 
+## SWOT Analysis
+
+![SWOT](https://user-images.githubusercontent.com/80679363/114889976-3d582780-9e28-11eb-858d-7cba263839e1.PNG)
+
+
 ## 4W's and 1H
 ### Who:
 This a 2 player game.
