@@ -22,7 +22,7 @@ The game can be generalized to an m,n,k-game in which two players alternate plac
 
 Once the game is opened it first shows the board, game instructions and a demo how to play.
 
-## Flow chart
+### UML diagram
 
 ![Capture5](https://user-images.githubusercontent.com/80679363/114272398-a3f9d180-9a33-11eb-8890-a06213116f3d.PNG)
 
