@@ -7,8 +7,7 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
 
-SRC = ttt.c\
-src\display_board.c\
+SRC =src\display_board.c\
 src\gameover.c\
 src\delay.c\
 src\game_instruction.c\
@@ -19,7 +18,13 @@ src\expose_winner.c
 TEST_SRC = test/test_ttt.c\
 unity/unity.c
 
-INC = inc
+INC = -Iinc\
+-Iunity
+
+DOCUMENTATION_OUTPUT = documentation/html
+
+# Default target built
+$(PROJ_NAME):all
 
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
@@ -37,11 +42,26 @@ endif
 # Makefile will not run target command if the name with file already exists. To override, use .PHONY
 .PHONY : all test coverage run clean doc
 
-$(PROJ_NAME): $(SRC)
-	gcc $(SRC) -I $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+all: $(BUILD_DIR)
+	gcc ttt.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
-run: $(PROJ_NAME)
+run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 test: $(SRC) $(TEST_SRC)
-	gcc -I $(INC) $(SRC) $(TEST_SRC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+doc:
+	make -C doc
+$(BUILD_DIR):
+	mkdir $(BUILD_DIR)
+
+coverage:${PROJ_NAME}
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(SRC)
+
+clean:
+	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+	make clean -C doc
+	rmdir $(BUILD_DIR) doc/html
