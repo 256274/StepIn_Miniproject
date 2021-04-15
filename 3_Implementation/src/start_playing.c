@@ -14,8 +14,7 @@ void Play_Game(int Turn){
 
 
     do{
-        if (Turn == CPU)
-        {
+        if (Turn == CPU){
             r_index = moves[Index] / SIDE;
             c_index = moves[Index] % SIDE;
             board[r_index][c_index] = CPUMOVE;
@@ -25,8 +24,7 @@ void Play_Game(int Turn){
             Turn = PLAYER;
         }
          
-        else if (Turn == PLAYER)
-        {
+        else if (Turn == PLAYER){
             r_index = moves[Index] / SIDE;
             c_index = moves[Index] % SIDE;
             board[r_index][c_index] = PLAYERMOVE;
@@ -37,16 +35,14 @@ void Play_Game(int Turn){
         }
 
     // check rows
-    for (int i=0; i<SIDE; i++)
-    {
-        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
+    for (int i=0; i<SIDE; i++){
+        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][1] != ' ')
             row = 1;
     }
     
     // check columns
-    for (int i=0; i<SIDE; i++)
-    {
-        if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != ' ')
+    for (int i=0; i<SIDE; i++){
+        if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[1][i] != ' ')
             column=1;
     }
 
@@ -55,14 +51,15 @@ void Play_Game(int Turn){
      diagonal=1;
 
     if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ')
-     diagonal=1;;
+     diagonal=1;
     }while ((row!=1 && column!=1 && diagonal!=1) &&  Index != SIDE*SIDE);
+
+
 
     // check if match is tied
     if ((row!=1 && column!=1 && diagonal!=1) && Index == SIDE * SIDE)
         printf("Match Drawn\n\n");
-    else
-    {
+    else{
         if (Turn == CPU)
             Turn = PLAYER;
         else if (Turn == PLAYER)
