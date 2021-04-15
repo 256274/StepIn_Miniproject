@@ -4,7 +4,7 @@
 void Play_Game(int Turn){
     void (*fptr)();         // Function pointer
     char board[SIDE][SIDE];
-    int moves[SIDE*SIDE];
+    int moves[SIDE*SIDE], a;
 
     fptr = Game_instructions;
     fptr();
@@ -64,6 +64,7 @@ void Play_Game(int Turn){
             Turn = PLAYER;
         else if (Turn == PLAYER)
             Turn = CPU;
+        a = gameover();
         Declare_Winner(Turn);
     }
     return;

@@ -42,6 +42,8 @@ void Game_instructions();
  */
 void initialize_Game(char (*board)[SIDE], int moves[]);
 
+int gameover();
+
 /**
  * @brief Displays the winner name
  * 
