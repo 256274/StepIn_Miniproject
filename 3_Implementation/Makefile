@@ -51,11 +51,6 @@ run: all
 test: $(SRC) $(TEST_SRC)
 	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
-doc:
-	make -C doc
-$(BUILD_DIR):
-	mkdir $(BUILD_DIR)
-
 coverage:${PROJ_NAME}
 	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
