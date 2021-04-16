@@ -1,3 +1,6 @@
+Build | unity |
+------|----------|
+<img src="https://img.shields.io/badge/Unit test-passing-light green?style=flat" alt="Unit test" />|<img src="https://img.shields.io/badge/Build-passing-light green?style=flat" alt="Build" />
 # TIC-TAC-TOE
 Tic-tac-toe (American English), noughts and crosses (Commonwealth English and British English), or Xs and Os (Ireland), is a paper-and-pencil (before) game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner. 
 
@@ -24,6 +27,11 @@ If played optimally by both players, the game always ends in a draw, making tic-
 ## Reference 
 
     C programming tutorial by Super Coders
+## Contributors List and Summary
+
+PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+-------|---------|----------------|----------------|---------------|-------------|--------------
+1 | 256274  | tic tac toe    | 2     | 1   |1  | Yes    
 
 #### Retrieved: 
 1. The flow of the code.
