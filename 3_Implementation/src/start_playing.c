@@ -7,12 +7,12 @@ void Play_Game(int Turn){
     int moves[SIDE*SIDE], a;
 
     fptr = Game_instructions;
-    fptr();
+    fptr(); // call game instructions
     initialize_Game(board, moves);
      
     int Index = 0, r_index, c_index, row=0, column=0, diagonal=0;
 
-
+// takes input from users and displays the board
     do{
         if (Turn == CPU){
             r_index = moves[Index] / SIDE;

@@ -1,5 +1,7 @@
 #include "tic_tac_toe.h"
 
+// assigns spaces to each cell and randomizes the indices or cell numbers 
+
 void initialize_Game(char (*board)[SIDE], int moves[]){
     srand(time(NULL));
 

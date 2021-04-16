@@ -1,5 +1,7 @@
 #include "tic_tac_toe.h"
 
+
+// Displays the tic tac toe board clearly
 void Display_TicTacToe_Board(char board[][SIDE]){
     printf(" _____ _____ _____\n");
     printf("|     |     |     |\n");

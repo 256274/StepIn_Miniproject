@@ -1,5 +1,7 @@
 #include "tic_tac_toe.h"
 
+// Displays few instructions about how to play, how to win and some information about the game.
+
 void Game_instructions(){
     printf("\n\n||============ Welcome to Tic Tac Toe Game ==========||\n\n");
 	printf("--> The Board is as shown below\n--> Choose a cell for your chance\n\n");
