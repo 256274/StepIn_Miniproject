@@ -1,4 +1,4 @@
-Build | unity |
+Unity | Build |
 ------|----------|
 <img src="https://img.shields.io/badge/Unit test-passing-light green?style=flat" alt="Unit test" />|<img src="https://img.shields.io/badge/Build-passing-light green?style=flat" alt="Build" />
 # TIC-TAC-TOE
