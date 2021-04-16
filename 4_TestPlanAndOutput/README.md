@@ -1,6 +1,6 @@
 # TEST PLAN:
 
-## Table no: High level test plan
+## Table 1: High level test plan
 
 | **Test ID** | **Description**                                              | **Exp I/P** | **Exp O/P** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|-----------------|-------------|----------------|------------------|
@@ -8,7 +8,7 @@
 |  H_02       | User enters a cell number, his token should appear there     |  Integers 1 to 9|token appears in the cell|correct output|Scenario based |
 |  H_03       | Invalid if user enters a number out of range                 |  Integers other then 1 to 9 |invalid | invalid |Boundary based    |
 
-## Table no: Low level test plan
+## Table 2: Low level test plan
 
 | **Test ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
